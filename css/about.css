@@ -138,7 +138,53 @@
     background-color: #E6E6E6;
 }
 
-.footer-content1 {
-    width:100%;
-    
+.footer-content1 p {
+    width:90%;
+    color: #565656;
+    margin-bottom:50px;
+}
+
+.footer-content1 img {
+    margin-left: 10px;
+}
+
+.footer-links h4 {
+    margin: auto;
+    width:85%;
+    margin-bottom:15px;
+}
+
+.footer-links ul {
+    margin: auto;
+    width:99%;
+    list-style: none;
+    color:#565656;
+    margin-bottom:40px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color:#565656;
+}
+
+.socialmedia {
+    margin-bottom:30px;
+}
+
+.socialmedia h4 {
+    margin: auto;
+    width:85%;
+    margin-bottom:15px;
+}
+
+.social-icons {
+    margin: auto;
+    width:85%;
+}
+
+.social-icons a, .social-icons button {
+    color:#DD97BB;
+    border: none;
+    background-color:#E6E6E6;
+    font-size: 22pt;
 }
