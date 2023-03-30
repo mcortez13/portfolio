@@ -17,38 +17,37 @@
     <script src="https://kit.fontawesome.com/ee419a96f3.js" crossorigin="anonymous"></script>
     
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!--css link - Own styles-->
     <link rel="stylesheet" href="css/contact.css">
 
     <!-- Bootstrap JS -->
-    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script async src="js/bootstrap.bundle.js"></script>
 
     <title>Farfalla Studio</title>
 </head>
 
 <body>
-    <header role="banner">
-        <div>
-            <img src="images/logo.jpg" alt="farfalla studio logo">
+    <header role="banner" class="header">
+        <div class="first-container container-fluid">
+            <img src="images/logo.jpg" alt="farfalla studio logo" class="logo w-25 h-25 mw-auto d-inline-block align-middle img-fluid">
         </div>
 
         <!--Portfolio page is not linked because it was not made for UX class, but it will be a link in my final website-->
-        <nav role="navigation" id="navigation">
+        <nav role="navigation" id="navigation" class="navbar mb-0 text-center">
             <ul>
-                <li class="home"><a href="index.html" aria-label="Goes to homepage">Home</a></li>
-                <li class="about"><a href="about.html" aria-label="Goes to about me page">About Me</a></li>
-                <li class="services"><a href="services.html" aria-label="Goes to services page">Services</a></li>
-                <li class="portfolio"><a>Portfolio</a></li>
-                <li class="contact"><a href="contact.html" aria-label="Goes to contact page">Contact</a></li>
+                <li class="home fs-6 fw-bold"><a href="index.html" aria-label="Goes to homepage">Home</a></li>
+                <li class="about fs-6 fw-bold"><a href="about.html" aria-label="Goes to about me page">About Me</a></li>
+                <li class="services fs-6 fw-bold"><a href="services.html" aria-label="Goes to services page">Services</a></li>
+                <li class="portfolio fs-6 fw-bold"><a>Portfolio</a></li>
+                <li class="contact fs-6 fw-bold"><a href="contact.html" aria-label="Goes to contact page">Contact</a></li>
             </ul>
         </nav>
 
-        <div role="banner">
+        <div role="banner" class="banner">
             <!--h1 will be displayed on mobile and tablet versions only-->
-            <h1>CONTACT</h1>
+            <h1 class="h1 position-absolute text-light fw-bold">CONTACT</h1>
             <img src="images/hp-banner.jpg" alt="satin banner">
         </div>
     </header>
@@ -56,64 +55,66 @@
     <br>
 
     <main>
-        <h2>CONTACT</h2>
+        <div class="container-fluid text-center">
+            <h2 class="hidden-title">CONTACT</h2>
 
-        <p>Let's get in touch!</p>
-        <div>
-            <button role="button" aria-label="Goes to facebook page"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-square'></i></a></button>
-            <button role="button" aria-label="Goes to instagram page"><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram'></i></a></button>
-            <button role="button" aria-label="Goes to linkedin page"><a href="https://www.linkedin.com/in/maria-giralda-cortez-pisano-b11784156/" target="_blank"><i class='fab fa-linkedin'></i></a></button>
-            <button role="button" aria-label="Goes to github page"><a href="https://github.com/mcortez13" target="_blank"><i class='fab fa-github'></i></a></button>
+            <p class="fs-5 fw-normal mt-5 mb-4">Let's get in touch!</p>
+            <div class="social-btn mb-5">
+                <button role="button" aria-label="Goes to facebook page"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-square fs-1'></i></a></button>
+                <button role="button" aria-label="Goes to instagram page"><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram fs-1'></i></a></button>
+                <button role="button" aria-label="Goes to linkedin page"><a href="https://www.linkedin.com/in/maria-giralda-cortez-pisano-b11784156/" target="_blank"><i class='fab fa-linkedin fs-1'></i></a></button>
+                <button role="button" aria-label="Goes to github page"><a href="https://github.com/mcortez13" target="_blank"><i class='fab fa-github fs-1'></i></a></button>
+            </div>
         </div>
 
         <div>
-            <form role="form">
+            <form role="form" class="container-fluid">
                 <fieldset>
-                    <label for="fullname">Full Name*</label>
+                    <label for="fullname" class="form-label">Full Name*</label>
                     <br>
-                    <input id="fullname" type="text" name="fullname" placeholder="Full Name">
+                    <input class="form-control" id="fullname" type="text" name="fullname" placeholder="Full Name">
 
                     <br><br>
 
-                    <label for="email">Email*</label>
+                    <label for="email" class="form-label">Email*</label>
                     <br>
-                    <input id="email" type="text" name="email" placeholder="Email">
+                    <input class="form-control" id="email" type="text" name="email" placeholder="Email">
 
                     <br><br>
 
-                    <label for="services">Service*</label>
+                    <label for="services" class="form-label">Service*</label>
                     <br>
-                    <select id="services" name="services">
-                        <option value="webdesign">Web Design</option>
-                        <option value="webdevelopment">Web Development</option>
-                        <option value="uxui">UX/UI</option>
-                        <option value="graphicdesign">Graphic Design</option>
+                    <select class="dropdown mb-4" id="services" name="services">
+                        <option class="dropdown-item" value="webdesign">Web Design</option>
+                        <option class="dropdown-item" value="webdevelopment">Web Development</option>
+                        <option class="dropdown-item" value="uxui">UX/UI</option>
+                        <option class="dropdown-item" value="graphicdesign">Graphic Design</option>
                     </select>
 
                     <br><br>
 
-                    <label for="message">Message</label>
+                    <label for="message" class="form-label">Message</label>
                     <br>
-                    <input id="message" type="text" name="message" placeholder="Message">
+                    <input class="form-control p-4" id="message" type="text" name="message" placeholder="Write your message">
                     
                     <br><br>
 
-                    <div class="button">
-                        <button role="button" type="submit" aria-label="Sends the form for revision">Submit</button>
+                    <div class="button text-center">
+                        <button class="btn btn-outline-dark btn-lg" role="button" type="submit" aria-label="Sends the form for revision">Submit</button>
                     </div>
                 </fieldset>
             </form>
         </div>
     </main>
 
-    <footer role="contentinfo">
-        <div>
-            <img src="images/logo-footer.png" alt="farfalla studio logo">
-            <p>Farfalla is a Web Design and Development studio based in Ottawa.</p>
+    <footer role="contentinfo" class="footer container mt-5">
+        <div class="footer-content1">
+            <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo w-25 h-25">
+            <p class="container fs-5 lh-sm">Farfalla is a Web Design and Development studio based in Ottawa.</p>
         </div>
 
-        <div>
-            <h4>LINKS</h4>
+        <div class="footer-links">
+            <h4 class="fs-6 fw-semibold">LINKS</h4>
             <ul>
                 <li><a href="about.html" aria-label="Goes to about me page">About Me</a></li>
                 <li><a href="services.html" aria-label="Goes to services page">Services</a></li>
@@ -122,18 +123,20 @@
             </ul>
         </div>
 
-        <div>
-            <h4>SOCIAL MEDIA</h4>
+        <div class="socialmedia">
+            <h4 class="fs-6 fw-semibold">SOCIAL MEDIA</h4>
 
-            <button role="button" aria-label="Goes to facebook page"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-square'></i></a></button>
-            <button role="button" aria-label="Goes to instagram page"><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram'></i></a></button>
-            <button role="button" aria-label="Goes to linkedin page"><a href="https://www.linkedin.com/in/maria-giralda-cortez-pisano-b11784156/" target="_blank"><i class='fab fa-linkedin'></i></a></button>
-            <button role="button" aria-label="Goes to github page"><a href="https://github.com/mcortez13" target="_blank"><i class='fab fa-github'></i></a></button>
+            <div class="social-icons">
+                <button role="button" aria-label="Goes to facebook page"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-square'></i></a></button>
+                <button role="button" aria-label="Goes to instagram page"><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram'></i></a></button>
+                <button role="button" aria-label="Goes to linkedin page"><a href="https://www.linkedin.com/in/maria-giralda-cortez-pisano-b11784156/" target="_blank"><i class='fab fa-linkedin'></i></a></button>
+                <button role="button" aria-label="Goes to github page"><a href="https://github.com/mcortez13" target="_blank"><i class='fab fa-github'></i></a></button>
+            </div>
         </div>
 
         <br>
         
-        <p>©2023 Farfalla - All rights reserved.</p>
+        <p class="copyright text-center fs-6">©2023 Farfalla - All rights reserved.</p>
     </footer>
 
 </body>
