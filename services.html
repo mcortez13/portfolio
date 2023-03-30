@@ -17,38 +17,37 @@
     <script src="https://kit.fontawesome.com/ee419a96f3.js" crossorigin="anonymous"></script>
     
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!--css link - Own styles-->
     <link rel="stylesheet" href="css/services.css">
 
     <!-- Bootstrap JS -->
-    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script async src="js/bootstrap.bundle.js"></script>
 
     <title>Farfalla Studio</title>
 </head>
 
 <body>
-    <header role="banner">
-        <div>
-            <img src="images/logo.jpg" alt="farfalla studio logo">
+    <header role="banner" class="header">
+        <div class="first-container container-fluid">
+            <img src="images/logo.jpg" alt="farfalla studio logo" class="logo w-25 h-25 mw-auto d-inline-block align-middle img-fluid">
         </div>
 
         <!--Portfolio page is not linked because it was not made for UX class, but it will be a link in my final website-->
-        <nav role="navigation" id="navigation">
+        <nav role="navigation" id="navigation" class="navbar mb-0 text-center">
             <ul>
-                <li class="home"><a href="index.html" aria-label="Goes to homepage">Home</a></li>
-                <li class="about"><a href="about.html" aria-label="Goes to about me page">About Me</a></li>
-                <li class="services"><a href="services.html" aria-label="Goes to services page">Services</a></li>
-                <li class="portfolio"><a>Portfolio</a></li>
-                <li class="contact"><a href="contact.html" aria-label="Goes to contact page">Contact</a></li>
+                <li class="home fs-6 fw-bold"><a href="index.html" aria-label="Goes to homepage">Home</a></li>
+                <li class="about fs-6 fw-bold"><a href="about.html" aria-label="Goes to about me page">About Me</a></li>
+                <li class="services fs-6 fw-bold"><a href="services.html" aria-label="Goes to services page">Services</a></li>
+                <li class="portfolio fs-6 fw-bold"><a>Portfolio</a></li>
+                <li class="contact fs-6 fw-bold"><a href="contact.html" aria-label="Goes to contact page">Contact</a></li>
             </ul>
         </nav>
 
-        <div role="banner">
+        <div role="banner" class="banner">
             <!--h1 will be displayed on mobile and tablet versions only-->
-            <h1>SERVICES</h1>
+            <h1 class="h1 position-absolute text-light fw-bold">SERVICES</h1>
             <img src="images/hp-banner.jpg" alt="satin banner">
         </div>
     </header>
@@ -56,42 +55,63 @@
     <br>
 
     <main>
-        <h2>SERVICES</h2>
+        <h2 class="hidden-title">SERVICES</h2>
 
-        <div>
-            <img src="images/card-1.jpg" alt="low-fi wireframes">
-            <h1>WEB DESIGN</h1>
-            <p>Engaging web design built upon user experience strategies that respond to its environment and new design trends.</p>
-        </div>
+        <div class="container text-center">
+            <div class="container-fluid mb-4">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/card-1.jpg" alt="low-fi wireframes">
 
-        <div>
-            <img src="images/card-2.jpg" alt="coding">
-            <h1>WEB DEVELOPMENT</h1>
-            <p>A service that delivers dynamic, database-driven custom web development solutions.</p>
-        </div>
-        
-        <div>
-            <img src="images/card-3.jpg" alt="tablet image">
-            <h1>UX/UI</h1>
-            <p>Research on user behaviour offering an optimized UX/UI design and browsing experience for all devices.</p>
-        </div>
+                    <div class="card-body p-5">
+                        <h1 class="card-title">WEB DESIGN</h1>
+                        <p class="card-text">Engaging web design built upon user experience strategies that respond to its environment and new design trends.</p>
+                    </div>
+                </div>
+            </div>
 
-        <div>
-            <img src="images/card-4.jpg" alt="car art direction">
-            <h1>GRAPHIC DESIGN</h1>
-            <p>Graphic design involves the creation of unique visuals like branding, illustrations, logos, packaging and iconography.</p>
-        </div>
+            <div class="container-fluid mb-4">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/card-2.jpg" alt="coding">
+                    
+                    <div class="card-body p-5">
+                        <h1 class="card-title">WEB DEVELOPMENT</h1>
+                        <p class="card-text">A service that delivers dynamic, database-driven custom web development solutions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid mb-4">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/card-3.jpg" alt="tablet image">
+                    
+                    <div class="card-body p-5">
+                        <h1 class="card-title">UX/UI</h1>
+                        <p class="card-text">Research on user behaviour offering an optimized UX/UI design and browsing experience for all devices.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container-fluid mb-4">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/card-4.jpg" alt="car art direction">
+                    
+                    <div class="card-body p-5">
+                        <h1 class="card-title">GRAPHIC DESIGN</h1>
+                        <p class="card-text">Graphic design involves the creation of unique visuals like branding, illustrations, logos, packaging and iconography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer role="contentinfo">
-        <div>
-            <img src="images/logo-footer.png" alt="farfalla studio logo">
-            <p>Farfalla is a Web Design and Development studio based in Ottawa.</p>
+    <footer role="contentinfo" class="footer container-fluid text-start">
+        <div class="footer-content1">
+            <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo w-25 h-25">
+            <p class="container-fluid fs-5 lh-sm">Farfalla is a Web Design and Development studio based in Ottawa.</p>
         </div>
 
-        <div>
-            <h4>LINKS</h4>
+        <div class="footer-links">
+            <h4 class="fs-6 fw-semibold">LINKS</h4>
             <ul>
                 <li><a href="about.html" aria-label="Goes to about me page">About Me</a></li>
                 <li><a href="services.html" aria-label="Goes to services page">Services</a></li>
@@ -100,19 +120,21 @@
             </ul>
         </div>
 
-        <div>
-            <h4>SOCIAL MEDIA</h4>
+        <div class="socialmedia">
+            <h4 class="fs-6 fw-semibold">SOCIAL MEDIA</h4>
 
-            <button role="button" aria-label="Goes to facebook page"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-square'></i></a></button>
-            <button role="button" aria-label="Goes to instagram page"><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram'></i></a></button>
-            <button role="button" aria-label="Goes to linkedin page"><a href="https://www.linkedin.com/in/maria-giralda-cortez-pisano-b11784156/" target="_blank"><i class='fab fa-linkedin'></i></a></button>
-            <button role="button" aria-label="Goes to github page"><a href="https://github.com/mcortez13" target="_blank"><i class='fab fa-github'></i></a></button>
+            <div class="social-icons">
+                <button role="button" aria-label="Goes to facebook page"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-square'></i></a></button>
+                <button role="button" aria-label="Goes to instagram page"><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram'></i></a></button>
+                <button role="button" aria-label="Goes to linkedin page"><a href="https://www.linkedin.com/in/maria-giralda-cortez-pisano-b11784156/" target="_blank"><i class='fab fa-linkedin'></i></a></button>
+                <button role="button" aria-label="Goes to github page"><a href="https://github.com/mcortez13" target="_blank"><i class='fab fa-github'></i></a></button>
+            </div>
         </div>
 
         <br>
         
-        <p>©2023 Farfalla - All rights reserved.</p>
+        <p class="copyright text-center fs-6">©2023 Farfalla - All rights reserved.</p>
     </footer>
-
+    
 </body>
 </html>
