@@ -43,15 +43,15 @@
                 <li class="portfolio fs-6 fw-bold"><a>Portfolio</a></li>
                 <li class="contact fs-6 fw-bold"><a href="contact.html" aria-label="Goes to contact page">Contact</a></li>
             </ul>
-        </nav>
+        </nav> 
 
-        <div>
-            <div role="article">
-                <h2 class="h2">Ready to make your brand</h2>
-                <h1 class="h1">COME ALIVE?</h1>
-                <img src="images/butterfly.png" alt="farfalla icon logo">
+        <div role="banner" class="banner">
+            <div>
+                <h2 class="fs-5 text-center fw-regular">Ready to make your brand</h2>
+                <h1 class="h1 text-center fw-bold">COME ALIVE?</h1>
+                <img src="images/butterfly.png" alt="farfalla icon logo" class="butterfly img-fluid">
                 <br>
-                <button role="button" aria-label="Goes to portfolio page">VIEW MY WORK</button>
+                <button class="btn btn-outline-dark btn-lg" role="button" aria-label="Goes to portfolio page">VIEW MY WORK</button>
             </div>
         </div>
     </header>
@@ -61,19 +61,47 @@
     <main>
         <!--Carousel on bootstrap-->
         <div>
-            <h2>PORTFOLIO HIGHLIGHTS</h2>
+            <h2 class="fs-4 fw-normal text-center">PORTFOLIO HIGHLIGHTS</h2>
 
-            <div>
-                <img src="images/carousel-2.jpg" alt="shu uemura ad for Mother's day">
-                <img src="images/carousel-3.jpg" alt="hair.com newsletter">
-                <img src="images/carousel-5.jpg" alt="gigi hadid nails at Michael Kors NYFS">
+            <div class="line"></div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/carousel-2.jpg" class="d-block w-100" alt="shu uemura ad for Mother's day">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/carousel-3.jpg" class="d-block w-100" alt="hair.com newsletter">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/carousel-5.jpg" class="d-block w-100" alt="gigi hadid nails at Michael Kors NYFS">
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
-        <div role="banner">
-            <img src="images/hp-banner.jpg" alt="satin texture banner">
-            <h2>GET A QUOTE</h2>
-            <button role="button" aria-label="Goes to contact page">TELL ME ABOUT YOUR PROJECT</button>
+        <div role="banner" class="banner2 text-center">
+            <h1 class="h1 fw-bold position-absolute text-white">GET A QUOTE</h1>
+            <button class="btn btn-outline-light btn-lg position-absolute" role="button" aria-label="Goes to contact page">TELL ME ABOUT YOUR PROJECT</button>
+            <img src="images/hp-banner.jpg" alt="satin texture banner" class="img-fluid">
         </div>
     </main>
 
