@@ -198,8 +198,5 @@ body {
 
 
 
-/*Styling tablet size*/
 
-@media screen and (min-width:768px) {
-
-}
+/*Tablet size: @media screen and (min-width:768px) added in bootstrap*/
