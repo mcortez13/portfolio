@@ -149,13 +149,35 @@ body {
 
 @media screen and (min-width:768px) {
 
-    .card-container {
-        margin: auto;
+    /*Styling card grid*/
+
+    .breakpoint-grid {
+        margin: 0 auto;
+        width: 100%;
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 2;
+        grid-template-columns: repeat (4, 2fr);
+        grid-template-areas: 
+        "grid1 grid1 grid2 grid2"
+        "grid3 grid3 grid4 grid4";
     }
 
+    .grid1 {
+        grid-area: grid1;
+        min-width: 370px;
+    }
 
+    .grid2 {
+        grid-area: grid2;
+        min-width: 370px;
+    }
 
+    .grid3 {
+        grid-area: grid3;
+        min-width: 370px;
+    }
+
+    .grid4 {
+        grid-area: grid4;
+        min-width: 370px;
+    }
 }
