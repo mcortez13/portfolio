@@ -198,4 +198,86 @@ body {
 
 @media screen and (min-width:768px) {
 
+    /*Styling hero banner*/
+
+    .banner {
+        margin: 0 auto;
+        width: 0 auto;
+        height: auto;
+        margin-top:100px;
+        margin-bottom:70px;
+        text-align: center;
+    }
+
+    .banner h2 {
+        color: #565656;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22pt;
+    }
+
+    .banner h1 {
+        color: #DD97BB;
+        font-size: 56pt;
+        letter-spacing: 7px;
+    }
+
+    .banner img {
+        height: 55px;
+        margin-bottom:70px;
+    }
+
+    .banner button {
+        border-radius: 0;
+        border: 2px solid #565656;
+        width:220px;
+    }
+
+
+    /*button hover*/
+
+    .banner button:hover {
+        color: white;
+        border: 2px solid #DD97BB;
+        background-color:#DD97BB;
+    }
+
+
+    /*Styling banner2*/
+
+    .banner2 {
+        margin:0 auto;
+        width: 0 auto;
+        height: 400px;
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+
+    .banner2 img {
+        height:400px;
+        width: 100%;
+    }
+
+    .banner2 h1 {
+        margin: auto;
+        width: 100%;
+        margin-top:110px;
+        font-size: 28pt;
+        text-shadow: 2px 1px 5px grey;
+    }
+
+    .banner2 button {
+        margin: 0 auto;
+        border-radius: 0;
+        border: 2px solid white;
+        margin-top:210px;
+    }
+
+    .banner2 button:hover {
+        border: 2px solid #DD97BB;
+        background-color: #DD97BB;
+        color: white;
+    }
+
+
+
 }
