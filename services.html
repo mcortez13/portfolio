@@ -31,7 +31,7 @@
 <body>
     <header role="banner" class="header">
         <div class="first-container container-fluid">
-            <img src="images/logo.jpg" alt="farfalla studio logo" class="logo w-25 h-25 mw-auto d-inline-block align-middle img-fluid">
+            <img src="images/logo.jpg" alt="farfalla studio logo" class="logo mw-auto d-inline-block align-middle img-fluid">
         </div>
 
         <!--Portfolio page is not linked because it was not made for UX class, but it will be a link in my final website-->
@@ -55,7 +55,11 @@
     <br>
 
     <main>
-        <h2 class="hidden-title">SERVICES</h2>
+        <div class="container-fluid text-center">
+            <h2 class="hidden-title">SERVICES</h2>
+
+            <div class="line"></div>
+        </div>
 
         <div class="breakpoint-grid card-container container-fluid text-center">
             <div class="grid1 container-fluid mb-4">
@@ -104,13 +108,13 @@
         </div>
     </main>
 
-    <footer role="contentinfo" class="footer container-fluid text-start mt-5">
-        <div class="footer-content1">
-            <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo w-25 h-25">
-            <p class="container-fluid fs-5 lh-sm">Farfalla is a Web Design and Development studio based in Ottawa.</p>
+    <footer role="contentinfo" class="footer container-fluid text-start mt-5 row">
+        <div class="footer-content1 col-lg">
+            <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo">
+            <p class="container-fluid lh-sm">Farfalla is a Web Design and Development studio based in Ottawa.</p>
         </div>
 
-        <div class="footer-column row">
+        <div class="footer-column row col-lg">
             <div class="footer-links col-md">
                 <h4 class="fs-6 fw-semibold">LINKS</h4>
                 <ul>

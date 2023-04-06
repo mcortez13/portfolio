@@ -88,8 +88,13 @@ body {
     background-color: #E6E6E6;
 }
 
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom:20px;
+}
+
 .footer-content1 p {
-    width:90%;
     color: #565656;
     margin-bottom:50px;
 }
@@ -105,8 +110,7 @@ body {
 }
 
 .footer-links ul {
-    margin: auto;
-    width:99%;
+    margin: 0 auto;
     list-style: none;
     color:#565656;
     margin-bottom:40px;
@@ -138,7 +142,6 @@ body {
     background-color:#E6E6E6;
     font-size: 22pt;
 }
-
 
 
 
@@ -180,4 +183,137 @@ body {
         grid-area: grid4;
         min-width: 370px;
     }
+}
+
+
+
+
+
+
+/*Styling desktop size*/
+
+@media screen and (min-width:992px) {
+
+    .first-container {
+        width:100%;
+        margin: 0 auto;
+    }
+
+    .first-container img {
+        width: 100px;
+        height:100px;
+    }
+
+
+    /*header*/
+
+    .navbar {
+        width: 55%;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding-bottom:35px;
+        height:auto;
+        background-color: white;
+        color:#737373;
+        text-align: center;
+        
+    }
+
+    .navbar ul {
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        display:flex;
+    }
+
+    .navbar li {
+        margin: 0 auto;
+        flex:auto;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:#737373;
+        font-weight: 600;
+    }
+
+
+    /*adding navbar selectors*/
+
+    .navbar a:hover {
+        color: #F17AB1;
+    }
+
+    .services a:link {
+        text-decoration: underline;
+    }
+
+
+    /*Styling hero banner*/
+
+    .banner {
+        margin: auto;
+        width: 0 auto;
+        height: 250px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .h1 {
+        display: none;
+    }
+
+
+    /*Styling main content*/
+
+    .hidden-title {
+        display:inline;
+        color:#565656;
+        font-size: 19pt;
+    }
+
+    .line { 
+        margin: auto;
+        width: 45px;
+        border-bottom:3px solid #DD97BB;
+        margin-bottom: 70px;
+        margin-top:15px;
+    }
+
+    .social-btn button {
+        border:none;
+        letter-spacing: 20px;
+    }
+
+    .social-btn i {
+        color:#D8ABC0;
+    }
+
+
+    /*Styling footer*/
+
+    .footer {
+        margin: 0 auto;
+        padding-top:50px;
+        width: auto;
+        height: auto;
+        background-color: #E6E6E6;
+    }
+
+    .footer-logo {
+        height:80px;
+        width:80px;
+    }
+
+    .footer-content1 p {
+        color: #565656;
+        margin-bottom:50px;
+    }
+
+
 }
