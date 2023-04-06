@@ -6,10 +6,19 @@ body {
 /*Styling mobile*/
 
 .first-container {
+    width:100%;
+    margin: 0 auto;
     text-align: center;
 }
 
+.first-container img {
+    width: 130px;
+    height:130px;
+}
+
+
 /*header*/
+
 .navbar {
     width: 0 auto;
     height:350px;
@@ -137,8 +146,13 @@ body {
     background-color: #E6E6E6;
 }
 
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom:20px;
+}
+
 .footer-content1 p {
-    width:90%;
     color: #565656;
     margin-bottom:50px;
 }
@@ -154,8 +168,7 @@ body {
 }
 
 .footer-links ul {
-    margin: auto;
-    width:99%;
+    margin: 0 auto;
     list-style: none;
     color:#565656;
     margin-bottom:40px;
@@ -187,6 +200,7 @@ body {
     background-color:#E6E6E6;
     font-size: 22pt;
 }
+
 
 
 
@@ -276,6 +290,92 @@ body {
         border: 2px solid #DD97BB;
         background-color: #DD97BB;
         color: white;
+    }
+
+}
+
+
+
+
+
+
+/*Styling desktop size*/
+
+@media screen and (min-width:992px) {
+
+    .first-container {
+        width:100%;
+        margin: 0 auto;
+    }
+
+    .first-container img {
+        width: 100px;
+        height:100px;
+    }
+
+
+    /*header*/
+
+    .navbar {
+        width: 55%;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding-bottom:35px;
+        height:auto;
+        background-color: white;
+        color:#737373;
+        text-align: center;
+        
+    }
+
+    .navbar ul {
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        display:flex;
+    }
+
+    .navbar li {
+        margin: 0 auto;
+        flex:auto;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:#737373;
+        font-weight: 600;
+    }
+
+
+    /*adding navbar selectors*/
+
+    .navbar a:hover {
+        color: #F17AB1;
+    }
+
+    .home a:link {
+        text-decoration: underline;
+    }
+
+    
+    /*Styling footer*/
+
+    .footer {
+        margin: 0 auto;
+        padding-top:50px;
+        width: auto;
+        height: auto;
+        background-color: #E6E6E6;
+    }
+
+    .footer-logo {
+        height:80px;
+        width:80px;
+    }
+
+    .footer-content1 p {
+        color: #565656;
+        margin-bottom:50px;
     }
 
 
