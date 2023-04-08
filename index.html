@@ -28,7 +28,16 @@
     <title>Farfalla Studio</title>
 </head>
 
-<body> 
+<body>
+    <div role="navigation" class="container-skip">
+        <ul class="skip-links">
+          <li><a href="#navigation" aria-label="Skip to the main nav bar">Skip to nav bar</a></li>
+          <li><a href="#carousel" aria-label="Skip to where the portfolio carousel starts">Skip to the portfolio carousel</a></li>
+          <li><a href="#quotebanner" aria-label="Skip to where the quote banner starts">Skip to quote banner section</a></li>
+          <li><a href="#footer" aria-label="Skip to where the footer starts">Skip to footer</a></li>
+        </ul>
+    </div>
+
     <header role="banner" class="header">
         <div class="first-container container-fluid">
             <img src="images/logo.jpg" alt="farfalla studio logo" class="logo mw-auto d-inline-block align-middle img-fluid">
@@ -60,7 +69,7 @@
 
     <main>
         <!--Carousel on bootstrap-->
-        <div>
+        <div id="carousel">
             <h2 class="fs-4 fw-normal text-center">PORTFOLIO HIGHLIGHTS</h2>
 
             <div class="line"></div>
@@ -98,14 +107,14 @@
             </div>
         </div>
 
-        <div role="banner" class="banner2 text-center">
+        <div role="banner" class="banner2 text-center" id="quotebanner">
             <h1 class="h1 fw-bold position-absolute text-white">GET A QUOTE</h1>
             <button class="btn btn-outline-light btn-lg position-absolute" role="button" aria-label="Goes to contact page">TELL ME ABOUT YOUR PROJECT</button>
             <img src="images/hp-banner.jpg" alt="satin texture banner" class="img-fluid">
         </div>
     </main>
 
-    <footer role="contentinfo" class="footer container-fluid text-start mt-5 row">
+    <footer role="contentinfo" class="footer container-fluid text-start mt-5 row" id="footer">
         <div class="footer-content1 col-lg">
             <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo">
             <p class="container-fluid lh-sm">Farfalla is a Web Design and Development studio based in Ottawa.</p>
