@@ -40,7 +40,7 @@
 
     <header role="banner" class="header">
         <div class="first-container container-fluid">
-            <img src="images/logo.jpg" alt="farfalla studio logo" class="logo mw-auto d-inline-block align-middle img-fluid">
+            <img src="images/logo.jpg" alt="farfalla studio logo" class="logo mw-auto d-inline-block align-middle img-fluid" itemprop="image">
         </div>
 
         <!--Portfolio page is not linked because it was not made for UX class, but it will be a link in my final website-->
@@ -57,30 +57,30 @@
         <div role="banner" class="banner">
             <!--h1 will be displayed on mobile and tablet versions only-->
             <h1 class="h1 position-absolute text-light fw-bold">ABOUT ME</h1>
-            <img src="images/hp-banner.jpg" alt="satin banner">
+            <img src="images/hp-banner.jpg" alt="satin banner" itemprop="image">
         </div>
     </header>
     
     <br> 
 
-    <main>
+    <main role="main">
         <div class="container-fluid text-center" id="myprofile">
             <h2 class="hidden-title">ABOUT ME</h2>
 
             <div class="line"></div>
 
-            <div class="profile text-center row">
-                <img src="images/portrait.jpg" alt="profile image of myself" class="col-lg">
+            <div class="profile text-center row" itemscope itemtype="https://schema.org/Person">
+                <img src="images/portrait.jpg" alt="profile image of myself" class="col-lg" itemprop="image">
 
                 <div class="profile-info col-lg">
                     <h3 class="h3">Hello!</h3>
-                    <p class="fs-5 lh-sm">My name is Maria Cortez Pisano, I am a Graphic & Interactive designer from Peru.</p>
+                    <p class="fs-5 lh-sm">My name is <span itemprop="givenName">Maria Cortez Pisano</span>, I am a <span itemprop="jobTitle">Graphic & Interactive designer</span> from <span itemprop="addressCountry">Peru</span>.</p>
                     <button class="btn btn-outline-dark btn-lg" type="button" role="button" aria-label="goes to portfolio page">CHECK PORTFOLIO</button>
                 </div>
             </div>
         </div>
 
-        <div class="blockquote text-center" id="quote">
+        <div class="blockquote text-center" id="quote" role="article">
             <q class="quote fs-2 fw-bold">Yes, design can make you happy.</q><br><br>
             <cite class="author fs-6">—Stefan Sagmeister</cite>
         </div>
@@ -89,7 +89,7 @@
 
     <footer role="contentinfo" class="footer container-fluid text-start mt-5 row" id="footer">
         <div class="footer-content1 col-lg">
-            <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo">
+            <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo" itemprop="image">
             <p class="container-fluid lh-sm">Farfalla is a Web Design and Development studio based in Ottawa.</p>
         </div>
 
