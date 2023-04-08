@@ -29,6 +29,14 @@
 </head>
 
 <body>
+    <div role="navigation" class="container-skip">
+        <ul class="skip-links">
+          <li><a href="#navigation" aria-label="Skip to the main nav bar">Skip to nav bar</a></li>
+          <li><a href="#servicescards" aria-label="Skip to where services are displayed">Skip to services section</a></li>
+          <li><a href="#footer" aria-label="Skip to where the footer starts">Skip to footer</a></li>
+        </ul>
+    </div>
+
     <header role="banner" class="header">
         <div class="first-container container-fluid">
             <img src="images/logo.jpg" alt="farfalla studio logo" class="logo mw-auto d-inline-block align-middle img-fluid">
@@ -61,7 +69,7 @@
             <div class="line"></div>
         </div>
 
-        <div class="breakpoint-grid card-container container-fluid text-center">
+        <div class="breakpoint-grid card-container container-fluid text-center" id="servicescards">
             <div class="grid1 container-fluid mb-4">
                 <div class="card text-center">
                     <img class="card-img-top" src="images/card-1.jpg" alt="low-fi wireframes">

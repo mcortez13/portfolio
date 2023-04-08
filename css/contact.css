@@ -15,7 +15,32 @@ body {
     height:130px;
 }
 
+
+/*Skip links*/
+
+.skip-links {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+  
+.skip-links a, a:visited {
+    position: absolute;
+    text-decoration: none;
+    color: #e8e5d9;
+    top: -3em;
+}
+  
+.skip-links a:focus {
+    top: 0;
+    position: fixed;
+    color: #F17AB1;
+    background-color: black;
+}
+
+
 /*header*/
+
 .navbar {
     width: 0 auto;
     height:350px;

@@ -29,6 +29,14 @@
 </head>
 
 <body>
+    <div role="navigation" class="container-skip">
+        <ul class="skip-links">
+          <li><a href="#navigation" aria-label="Skip to the main nav bar">Skip to nav bar</a></li>
+          <li><a href="#contactform" aria-label="Skip to where the contact form starts">Skip to contact form</a></li>
+          <li><a href="#footer" aria-label="Skip to where the footer starts">Skip to footer</a></li>
+        </ul>
+    </div>
+
     <header role="banner" class="header">
         <div class="first-container container-fluid">
             <img src="images/logo.jpg" alt="farfalla studio logo" class="logo mw-auto d-inline-block align-middle img-fluid">
@@ -55,7 +63,7 @@
     <br>
 
     <main>
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center" id="contactform">
             <h2 class="hidden-title">CONTACT</h2>
 
             <div class="line"></div>
@@ -109,7 +117,7 @@
         </div>
     </main>
 
-    <footer role="contentinfo" class="footer container-fluid text-start mt-5 row">
+    <footer role="contentinfo" class="footer container-fluid text-start mt-5 row" id="footer">
         <div class="footer-content1 col-lg">
             <img src="images/logo-footer.png" alt="farfalla studio logo" class="footer-logo">
             <p class="container-fluid lh-sm">Farfalla is a Web Design and Development studio based in Ottawa.</p>
