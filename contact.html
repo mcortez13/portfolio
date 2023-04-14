@@ -56,7 +56,24 @@
         <div role="banner" class="banner">
             <!--h1 will be displayed on mobile and tablet versions only-->
             <h1 class="h1 position-absolute text-light fw-bold">CONTACT</h1>
-            <img src="images/hp-banner.jpg" alt="satin banner" itemprop="image">
+            <picture>
+                <source srcset="images/hp-banner-992_x_163.jpg 1x,
+                images/hp-banner-1984_x_326.jpg 2x,
+                images/hp-banner-2976_x_489.jpg 3x" 
+                media="(min-width: 992px)">
+
+                <source srcset="images/hp-banner-600_x_244.jpg 1x,
+                images/hp-banner-1200_x_488.jpg 2x,
+                images/hp-banner-1800_x_732.jpg 3x"
+                media="(min-width: 600px)">
+                
+                <source srcset="images/hp-banner-320_x_247.jpg 1x,
+                images/hp-banner-640_x_494.jpg 2x,
+                images/hp-banner-960_x_741.jpg 3x"
+                media="(min-width: 320px)">
+                
+                <img src="images/hp-banner.jpg" alt="satin banner" itemprop="image">
+            </picture>
         </div>
     </header>
     
